@@ -1,6 +1,5 @@
-# Structured Outputs Parsing Helpers
-
-The OpenAI API supports extracting JSON from the model with the `response_format` request param, for more details on the API, see [this guide](https://platform.openai.com/docs/guides/structured-outputs).
+# 结构化输出解析助手
+OpenAi API 支持使用 `response_format` 请求参数从模型中提取JSON，想获取更多相关详细信息，请访问[这里](https://platform.openai.com/docs/guides/structured-outputs).
 
 The SDK provides a `client.beta.chat.completions.parse()` method which is a wrapper over the `client.chat.completions.create()` that
 provides richer integrations with Python specific types & returns a `ParsedChatCompletion` object, which is a subclass of the standard `ChatCompletion` class.
